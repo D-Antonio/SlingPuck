@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ping pong</title>
+	<link rel="stylesheet" type="text/css" href="estilo2.css">
+	<meta name = "viewport" content = "width=device-width">
+</head>
+<body>
+	<main>
+		<div class="container">
+				<i style=" position: fixed;right: 0;bottom: 0;left: 0;z-index: 1030;text-align: center !important;"><a style="color: #fff;" href="https://www.facebook.com/GastonSalasCAT" target="_blank"><small>@Gaston - diseñador</small></a><br>&nbsp;</i>
+				<button onclick="location.href='game.html'" class="btnPlay">Play</button>
+				<input type="text" style="width: 90%" name="nombre" placeholder="Nombre..." required="">
+				<button onclick="location.href='game.html'" class="btnOptions">Online</button>
+		</div>
+		
+	</main>
+<script type="text/javascript">
+var caja = document.getElementsByClassName('container');
+function resize(){
+if ((document.documentElement.clientHeight/2)>document.documentElement.clientWidth) {
+caja[0].style.width = 100+"%";
+caja[0].style.height = 100+"vh";} else{
+caja[0].style.width = document.documentElement.clientHeight/2+"px";
+caja[0].style.height = document.documentElement.clientHeight+"px";
+}
+}
+window.addEventListener("resize", resize);
+resize();
+</script>
+</body>
+
+</html>

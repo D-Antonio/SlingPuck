@@ -1,0 +1,14 @@
+<script type="text/javascript">
+var caja = document.getElementById("idDelDiv");
+function resize(){
+if ((document.documentElement.clientHeight/2)>document.documentElement.clientWidth) {
+caja.width=document.documentElement.clientWidth;
+caja.height=document.documentElement.clientWidth*2;
+} else{
+caja.width=document.documentElement.clientHeight/2;
+caja.height=document.documentElement.clientHeight;
+}
+}
+window.addEventListener("resize", resize);
+resize();
+</script>
