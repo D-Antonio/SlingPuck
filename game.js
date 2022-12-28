@@ -473,10 +473,11 @@ function eventDownMoveUp(event,tipo) {
 window.addEventListener("resize", resize);
 
 //raton
+/*
 window.addEventListener("mousedown", function(e){eventDownMoveUp(e,0)});
 window.addEventListener("mousemove", function(e){eventDownMoveUp(e,0)});
 window.addEventListener("mouseup", function(e){eventDownMoveUp(e,0)});
-
+*/
 //toush (pantalla tactil)
 window.addEventListener("touchend", function(e){eventDownMoveUp(e,1);
 p1.down=false;
